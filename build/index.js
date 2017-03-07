@@ -68,10 +68,9 @@
           return false;
         };
         return scope.setPage = function(page) {
+          var base;
           scope.ngModel = page;
-          if (scope.pageChange) {
-            return scope.pageChange()(page);
-          }
+          return typeof scope.pageChange === "function" ? typeof (base = scope.pageChange()) === "function" ? base(page) : void 0 : void 0;
         };
       }
     };
