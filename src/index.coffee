@@ -63,4 +63,5 @@ module
       false
     scope.setPage = (page) ->
       scope.ngModel = page
-      scope.pageChange?() page
+      if scope.pageChange
+        scope.pageChange() page
