@@ -13,9 +13,9 @@ module
       <style type=\"text/css\">.pagination {display: flex;}.pagination .page {padding: 0.5rem;min-width: 1.2rem;cursor: pointer;user-select: none;}.pagination .page.selected {color: #f00;}.pagination .page.disabled {opacity: 0.5;pointer-events: none;}</style>
       <div ng-click=\"setPage(ngModel - 1)\" ng-class=\"{disabled:ngModel&lt;2}\" ng-hide=\"hidePrevNext\" class=\"page prev\">{{prevText}}</div>
       <div ng-click=\"setPage(1)\" ng-show=\"showFirstLast\" class=\"page first\">{{firstText}}</div>
-      <div ng-show=\"ellipsisPre\" class=\"page ellipsis pre\">...</div>
+      <div ng-show=\"ellipsisPre\" class=\"page ellipsis pre\">{{ellipsisText}}</div>
       <div ng-repeat=\"myPage in (allPages = getPages())\" ng-click=\"setPage(myPage)\" ng-class=\"{selected:ngModel===myPage}\" ng-show=\"shouldShowPage(myPage)\" class=\"page number\">{{myPage}}</div>
-      <div ng-show=\"ellipsisPost\" class=\"page ellipsis post\">...</div>
+      <div ng-show=\"ellipsisPost\" class=\"page ellipsis post\">{{ellipsisText}}</div>
       <div ng-click=\"setPage(totalPages)\" ng-show=\"showFirstLast\" class=\"page last\">{{lastText}}</div>
       <div ng-click=\"setPage(ngModel + 1)\" ng-class=\"{disabled:ngModel&gt;totalPages-1}\" ng-hide=\"hidePrevNext\" class=\"page next\">{{nextText}}</div>
     </div>"
