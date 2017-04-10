@@ -8,7 +8,7 @@
     module = angular.module('ndx');
   } catch (error) {
     e = error;
-    module = angular.module('ndx-pagination', []);
+    module = angular.module('ndx', []);
   }
 
   module.directive('pagination', function() {
