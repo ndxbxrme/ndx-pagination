@@ -62,7 +62,7 @@
           if (scope.ngModel > ceilHalf) {
             scope.ellipsisPre = true;
           }
-          if (scope.ngModel < scope.totalPages - floorHalf) {
+          if (scope.ngModel < scope.totalPages - floorHalf && scope.totalPages > pagesToShow) {
             scope.ellipsisPost = true;
           }
           return false;

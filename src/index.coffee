@@ -58,7 +58,7 @@ module
       scope.ellipsisPost = false
       if scope.ngModel > ceilHalf
         scope.ellipsisPre = true
-      if scope.ngModel < scope.totalPages - floorHalf
+      if scope.ngModel < scope.totalPages - floorHalf and scope.totalPages > pagesToShow
         scope.ellipsisPost = true
       false
     scope.setPage = (page) ->

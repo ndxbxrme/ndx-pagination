@@ -1,6 +1,6 @@
 {
   "name": "ndx-pagination",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "simple angular pagination",
   "main": "build/index.js",
   "scripts": {
