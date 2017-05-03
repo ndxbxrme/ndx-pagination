@@ -50,7 +50,6 @@
             end = scope.totalPages;
             i = Math.max(0, end - pagesToShow);
           }
-          console.log(i, end, scope.totalPages);
           scope.ellipsisPre = false;
           if (i > 0) {
             scope.ellipsisPre = true;
