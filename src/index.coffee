@@ -60,6 +60,8 @@ module
         scope.ellipsisPost = true
       while i++ < Math.min scope.totalPages, end
         pages.push i
+      if scope.ngModel > scope.totalPages
+        scope.ngModel = 1
       pages
     scope.setPage = (page) ->
       scope.ngModel = page

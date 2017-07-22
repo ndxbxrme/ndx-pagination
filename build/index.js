@@ -61,6 +61,9 @@
           while (i++ < Math.min(scope.totalPages, end)) {
             pages.push(i);
           }
+          if (scope.ngModel > scope.totalPages) {
+            scope.ngModel = 1;
+          }
           return pages;
         };
         return scope.setPage = function(page) {
